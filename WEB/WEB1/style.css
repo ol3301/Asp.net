@@ -1,0 +1,23 @@
+﻿form {
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.list1 {
+    float:left;
+}
+
+.list2 {
+    float: right;
+}
+
+.list1, .list2{
+    width:200px;
+    margin-bottom:20px;
+}
+
+.btns{
+    clear:both;
+    display:inline;
+}
