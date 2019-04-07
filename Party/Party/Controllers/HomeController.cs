@@ -25,7 +25,10 @@ namespace Party.Controllers
         [HttpPost]
         public ActionResult RsvpForm(GuestResponse guest)
         {
-            return View("Thanx", guest);
+            if (ModelState.IsValid)
+                return View("Thanx", guest);
+            else
+                return View();
         }
     }
 }
