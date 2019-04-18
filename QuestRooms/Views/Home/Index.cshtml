@@ -1,0 +1,24 @@
+﻿@model QuestRooms.Models.QuestRoom
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>                           <br>
+@Model.Name                              <br>
+@Model.Description                       <br>
+@Model.time                              <br>
+@Model.MinGamerCount                     <br>
+@Model.MaxGamerCount                     <br>
+@Model.Address                           <br>
+@foreach (var phone in Model.Phones)
+{
+    @:phone,
+}
+@Model.Email                             <br>
+@Model.Company                           <br>
+@Model.Raiting                           <br>
+@Model.LevelOfFear                       <br>
+@Model.LevelOfHard                       <br>
+@Model.Logo                              <br>
+
