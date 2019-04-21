@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
-VisualStudioVersion = 16.0.28803.156
+VisualStudioVersion = 16.0.28803.202
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuestRooms", "QuestRooms\QuestRooms.csproj", "{D13292C3-2614-49A4-9C44-8B24327DBABA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuestRooms", "QuestRooms.csproj", "{D13292C3-2614-49A4-9C44-8B24327DBABA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,6 +20,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {BD0DAB33-7549-4A9B-A629-709C2F0A30A5}
+		SolutionGuid = {5796ABAA-2F59-48D5-96B4-CAC596D70763}
 	EndGlobalSection
 EndGlobal

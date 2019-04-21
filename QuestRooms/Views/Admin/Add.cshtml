@@ -1,0 +1,21 @@
+﻿@model QuestRooms.Models.QuestRoom
+
+@{
+    ViewBag.Title = "Add";
+}
+
+<h2>Add</h2>
+
+Имя @Html.TextBoxFor(n => Model.Name);
+Описание @Html.TextBoxFor(n => Model.Description);
+Time @Html.TextBoxFor(n => Model.time);
+MinGamerCount @Html.TextBoxFor(n => Model.MinGamerCount);
+MaxGamerCount @Html.TextBoxFor(n => Model.MaxGamerCount);
+Address @Html.TextBoxFor(n => Model.Address);
+Email @Html.TextBoxFor(n => Model.Email);
+Company @Html.TextBoxFor(n => Model.Company);
+LevelOfFear @Html.TextBoxFor(n => Model.Raiting);
+Raiting @Html.TextBoxFor(n => Model.LevelOfFear);
+LevelOfHard @Html.TextBoxFor(n => Model.LevelOfHard);
+Logo @Html.TextBoxFor(n => Model.Logo);
+

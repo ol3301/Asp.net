@@ -5,25 +5,27 @@ using System.Web;
 
 namespace QuestRooms.Models.DAL
 {
-    public class RepositoryRoom
+    public static class RepositoryRoom
     {
-        private List<QuestRoom> Rooms { get; set; } = new List<QuestRoom>();
-
-        public RepositoryRoom()
-        {
-
-        }
-
-        public List<QuestRoom> GetRooms()
+        private  static List<QuestRoom> Rooms { get; set; } = new List<QuestRoom>();
+        public static List<QuestRoom> GetRooms()
         {
             return Rooms;
         }
 
-        public void Add(QuestRoom room)
+        public static void Add(QuestRoom room)
         {
             Rooms.Add(room);
         }
 
+        public static QuestRoom Get(int Id)
+        {
+            return Rooms.FirstOrDefault(r => r.Id == Id);
+        }
 
+        public static void Del(int Id)
+        {
+            Rooms.RemoveAll(r => r.Id == Id);
+        }
     }
 }

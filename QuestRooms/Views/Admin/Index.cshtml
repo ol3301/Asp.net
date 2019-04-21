@@ -4,7 +4,6 @@
     ViewBag.Title = "Index";
 }
 
-
 <html>
 
 <head>
@@ -12,13 +11,13 @@
 </head>
 
 <body>
-    @Html.ActionLink("Админ панель", "Index", "Admin") <br>
+    @Html.ActionLink("Добавить", "Add", "Admin")  <br>
 
     @foreach (var room in Model)
     {
         <div class="room_item">
             <img src="@room.GalaryOfImages.First()" /> <br>
-            @Html.ActionLink(@room.Name, "ShowRoom", "Home", new { Id = @room.Id }, null) <br>
+            @Html.ActionLink(@room.Name, "ShowRoom", "Home", new { Id = room.Id }, null) <br>
             @room.Description <br>
             @room.time <br>
             @room.MinGamerCount <br>
@@ -34,10 +33,11 @@
             @room.Raiting <br>
             @room.LevelOfFear <br>
             @room.LevelOfHard <br>
-            @room.Logo
+            @room.Logo <br>
+            @Html.ActionLink("удалить", "Del", "Admin", new { Id = room.Id }, null)
         </div>
-    }
+        }
 </body>
 
-</html>
 
+</html>
