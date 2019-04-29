@@ -21,57 +21,56 @@ namespace QuestRooms
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
 
-            RepositoryRoom.Add(new QuestRoom
-            {
-                Id = 1,
-                Name = "Room",
-                Description = "Desc",
-                time = TimeSpan.FromMinutes(30),
-                MinGamerCount = 4,
-                MaxGamerCount = 6,
-                Address = "address",
-                Phones = new List<string> { "123", "312", "1231231" },
-                Email = "olegaedfge",
-                Company = "12312312",
-                Raiting = 4,
-                LevelOfFear = 10,
-                LevelOfHard = 10,
-                GalaryOfImages = new List<string> { @"~/Images/Panic_Room_movie.jpg" }
-            });
-            RepositoryRoom.Add(new QuestRoom
-            {
-                Id = 2,
-                Name = "Room",
-                Description = "Desc",
-                time = TimeSpan.FromMinutes(30),
-                MinGamerCount = 4,
-                MaxGamerCount = 6,
-                Address = "address",
-                Phones = new List<string> { "123", "312", "1231231" },
-                Email = "olegaedfge",
-                Company = "12312312",
-                Raiting = 4,
-                LevelOfFear = 10,
-                LevelOfHard = 10,
-                GalaryOfImages = new List<string> { @"~/Images/Panic_Room_movie" }
-            });
-            RepositoryRoom.Add(new QuestRoom
-            {
-                Id = 3,
-                Name = "Room",
-                Description = "Desc",
-                time = TimeSpan.FromMinutes(30),
-                MinGamerCount = 4,
-                MaxGamerCount = 6,
-                Address = "address",
-                Phones = new List<string> { "123", "312", "1231231" },
-                Email = "olegaedfge",
-                Company = "12312312",
-                Raiting = 4,
-                LevelOfFear = 10,
-                LevelOfHard = 10,
-                GalaryOfImages = new List<string> { @"~/Images/Panic_Room_movie" }
-            });
+            //RepositoryRoom.Add(new QuestRoom
+            //{
+            //    Id = 1,
+            //    Name = "Room",
+            //    Description = "Desc",
+            //    time = TimeSpan.FromMinutes(30),
+            //    MinGamerCount = 4,
+            //    MaxGamerCount = 6,
+            //    Address = "address",
+            //    Phones = new List<string> { "123123123" , "123123123", "123123123" },
+            //    Email = "olegaedfge",
+            //    Company = "12312312",
+            //    Raiting = 4,
+            //    LevelOfFear = 10,
+            //    LevelOfHard = 10
+            //});
+            //
+            //RepositoryRoom.Add(new QuestRoom
+            //{
+            //    Id = 1,
+            //    Name = "Room",
+            //    Description = "Desc",
+            //    time = TimeSpan.FromMinutes(30),
+            //    MinGamerCount = 4,
+            //    MaxGamerCount = 6,
+            //    Address = "address",
+            //    Phones = new List<string> { "123123123", "123123123", "123123123" },
+            //    Email = "olegaedfge",
+            //    Company = "12312312",
+            //    Raiting = 4,
+            //    LevelOfFear = 10,
+            //    LevelOfHard = 10
+            //});
+            //
+            //RepositoryRoom.Add(new QuestRoom
+            //{
+            //    Id = 1,
+            //    Name = "Room",
+            //    Description = "Desc",
+            //    time = TimeSpan.FromMinutes(30),
+            //    MinGamerCount = 4,
+            //    MaxGamerCount = 6,
+            //    Address = "address",
+            //    Phones = new List<string> { "123123123", "123123123", "123123123" },
+            //    Email = "olegaedfge",
+            //    Company = "12312312",
+            //    Raiting = 4,
+            //    LevelOfFear = 10,
+            //    LevelOfHard = 10
+            //});
         }
     }
 }

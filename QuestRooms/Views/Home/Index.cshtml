@@ -14,10 +14,34 @@
 <body>
     @Html.ActionLink("Админ панель", "Index", "Admin") <br>
 
+    @using (Html.BeginForm("ShowConcrete", "Home", FormMethod.Post))
+    {
+        <input type="hidden" value="@ViewBag.BookId" name="BookId" />
+        <table>
+            <tr>
+                <td><p>Уровень сложности </p></td>
+                <td><input type="text" name="LevelOfHard" /> </td>
+            </tr>
+            <tr>
+                <td><p>Уровень страха</p></td>
+                <td><input type="text" name="LevelOfFear" /> </td>
+            </tr>
+            <tr>
+                <td><p>Количество игроков</p></td>
+                <td><input type="text" name="GamerCount" /> </td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Отправить" /> </td>
+                <td></td>
+            </tr>
+        </table>
+    }
+    
+    <br>
+
     @foreach (var room in Model)
     {
         <div class="room_item">
-            <img src="@room.GalaryOfImages.First()" /> <br>
             @Html.ActionLink(@room.Name, "ShowRoom", "Home", new { Id = @room.Id }, null) <br>
             @room.Description <br>
             @room.time <br>
@@ -34,7 +58,6 @@
             @room.Raiting <br>
             @room.LevelOfFear <br>
             @room.LevelOfHard <br>
-            @room.Logo
         </div>
     }
 </body>

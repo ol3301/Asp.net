@@ -15,13 +15,13 @@ namespace QuestRooms.Models
         public int MinGamerCount { get; set; }
         public int MaxGamerCount { get; set; }
         public string Address { get; set; }
+        public string JsonPhones { get; set; }
         public List<string> Phones { get; set; }
         public string Email { get; set; }
         public string Company { get; set; }
         public int Raiting { get; set; }
         public int LevelOfFear { get; set; }
         public int LevelOfHard { get; set; }
-        public Image Logo { get; set; }
-        public List<string> GalaryOfImages { get; set; }
+        public byte[] Logo { get; set; }
     }
 }

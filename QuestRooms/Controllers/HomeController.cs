@@ -1,5 +1,6 @@
 ﻿using QuestRooms.Models;
 using QuestRooms.Models.DAL;
+using QuestRooms.Models.Filtering;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,6 +25,11 @@ namespace QuestRooms.Controllers
             ViewBag.Message = "Your application description page.";
 
             return View();
+        }
+
+        public ActionResult ShowConcrete(RoomProperties rp)
+        {
+            return View("Index", RepositoryRoom.GetConcrete(rp));
         }
 
         public ActionResult ShowRoom(int Id)

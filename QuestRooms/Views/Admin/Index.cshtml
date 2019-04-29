@@ -16,7 +16,6 @@
     @foreach (var room in Model)
     {
         <div class="room_item">
-            <img src="@room.GalaryOfImages.First()" /> <br>
             @Html.ActionLink(@room.Name, "ShowRoom", "Home", new { Id = room.Id }, null) <br>
             @room.Description <br>
             @room.time <br>
