@@ -11,6 +11,7 @@
         }
 
         public virtual DbSet<QuestRoom> Rooms { get; set; }
+        public virtual DbSet<User> Users { get; set; }
     }
 
 }
